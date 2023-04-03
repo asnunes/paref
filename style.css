@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+body{
+    background-color: #EEF9BF;
+}
+.relogio{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color:  #4b4b42;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 70px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: #75B79E;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+}
+.carta{
+    width: 117px;
+    height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A7E9AF;
+    border-radius: 5px;
+    border: 1px solid #99CEA8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+.escondido{
+    width: 0px;
+    height: 0px;
+}
+.virada {
+    transform: rotateY(180deg);
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.break {
+    display: none;
+}
+@media  (min-width: 1042px) {
+    .break {
+        display: flex;
+        flex-basis: 100%;
+        height: 0;
+    }
+}
+@media  (max-width: 414px) {
+    h1{
+        font-size: 36px;
+    }
+    .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .relogio{
+        width: 60px;
+        height: 40px;
+    }
+}
